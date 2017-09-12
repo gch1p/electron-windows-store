@@ -88,6 +88,7 @@ These are all options for the CLI:
   --expanded-base-image <base-image>         Path to the expanded base image
   --makeappx-params <params>                 Additional parameters for Make-AppXPackage (example: --makeappx-params "/l","/d")
   --signtool-params <params>                 Additional parameters for signtool.exe (example: --makeappx-params "/l","/d")
+  --signtool-custom-params <true|false>      Use only parameters from --signtool-params
   --create-config-params <params>            Additional parameters for makepri.exe "createconfig" (example: --create-config-params "/l","/d")')
   --create-pri-params <params>               Additional parameters for makepri.exe "new" (example: --create-pri-params "/l","/d")')
   --verbose <true|false>                     Enable debugging (similar to setting a DEBUG=electron-windows-store environment variable)
@@ -119,6 +120,7 @@ convertToWindowsStore({
    expandedBaseImage: 'C:\\base-image.wim',
    makeappxParams: ['/l'],
    signtoolParams: ['/p'],
+   signtoolCustomParams: false,
    makePri: true,
    createConfigParams: ['/a'],
    createPriParams: ['/b'],

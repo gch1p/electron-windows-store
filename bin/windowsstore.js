@@ -45,6 +45,7 @@ program
   .option('--make-pri <true|false>', 'Use makepri.exe (you don\'t need to unless you know you do)', (i) => (i === 'true'))
   .option('--makeappx-params <params>', 'Additional parameters for Make-AppXPackage (example: --makeappx-params "/l","/d")', list)
   .option('--signtool-params <params>', 'Additional parameters for signtool.exe (example: --makeappx-params "/l","/d")', list)
+  .option('--signtool-custom-params <true|false>', 'Use only parameters from --signtool-params', list)
   .option('--create-config-params <params>', 'Additional parameters for makepri.exe "createconfig" (example: --create-config-params "/l","/d")', list)
   .option('--create-pri-params <params>', 'Additional parameters for makepri.exe "new" (example: --create-pri-params "/l","/d")', list)
   .option('--verbose <true|false>', 'Enable debug mode')
