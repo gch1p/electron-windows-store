@@ -44,6 +44,7 @@ program
   .option('--expanded-base-image <base-image>', 'Path to the expanded base image')
   .option('--make-pri <true|false>', 'Use makepri.exe (you don\'t need to unless you know you do)', (i) => (i === 'true'))
   .option('--makeappx-params <params>', 'Additional parameters for Make-AppXPackage (example: --makeappx-params "/l","/d")', list)
+  .option('--skip-signing <true|false>', 'Should the package be signed')
   .option('--signtool-params <params>', 'Additional parameters for signtool.exe (example: --makeappx-params "/l","/d")', list)
   .option('--signtool-custom-params <true|false>', 'Use only parameters from --signtool-params', list)
   .option('--create-config-params <params>', 'Additional parameters for makepri.exe "createconfig" (example: --create-config-params "/l","/d")', list)
